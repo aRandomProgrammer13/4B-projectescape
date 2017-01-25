@@ -1,4 +1,5 @@
 // JavaScript Document
+<<<<<<< HEAD
 
 // Change Display
 
@@ -13,3 +14,5 @@
 }
 
 
+=======
+>>>>>>> Version-1.0
