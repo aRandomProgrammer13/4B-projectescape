@@ -25,5 +25,11 @@ body{
 
 .buttons {
 	color: #C8C9CF;
+	border-radius: 50px;
+	top: 50px;
+	
+	}
+.inventory {
+border-radious:50px;	
 	
 	}
