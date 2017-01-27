@@ -8,8 +8,8 @@ body{
 /* Box */
 .screen.box {
 	background-color: #525252;
-	height: 900px;
-	width: 1250px;
+	height: 600px;
+	width: 1100px;
 	border-radius: 10px;
 	position: relative;
 	top: 50px;
