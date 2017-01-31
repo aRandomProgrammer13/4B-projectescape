@@ -16,7 +16,7 @@ body{
 	left: 18%;
 	padding: 16px;
 }
-
+ 
 /* Buttons */
 .keys {
 	position: relative;
@@ -59,3 +59,13 @@ float: right;
 	left: 18%;
 	padding: 16px;
 }
+
+.game.functions{
+	padding: 32px;
+	font-size: 5000px;
+	}
+	
+.settings.functions{
+	padding: 32px;
+	font-size: 5000px;
+	}
