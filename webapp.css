@@ -8,7 +8,7 @@ body{
 /* Box */
 .screen.box {
 	background-color: #303032;
-	height: 400px;
+	height: 20px;
 	width: 1000px;
 	border-radius: 10px;
 	position: relative;
@@ -40,7 +40,7 @@ float: right;
 
 .lower.box {
 	background-color: #31363F;
-	height: 100px;
+	height: 50px;
 	width: 1000px;
 	border-radius: 10px;
 	position: relative;
@@ -51,7 +51,7 @@ float: right;
 
 .middle.box {
 	background-color:white;
-	height: 400px;
+	height: 250px;
 	width: 1000px;
 	border-radius: 10px;
 	position: relative;
