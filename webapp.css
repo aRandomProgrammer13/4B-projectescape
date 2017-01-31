@@ -8,8 +8,8 @@ body{
 /* Box */
 .screen.box {
 	background-color: #525252;
-	height: 600px;
-	width: 1100px;
+	height: 400px;
+	width: 1000px;
 	border-radius: 10px;
 	position: relative;
 	top: 50px;
@@ -38,10 +38,10 @@ body{
 float: right;
 }
 
-.screen.box {
-	background-color: #525252;
-	height: 600px;
-	width: 1100px;
+.lower.box {
+	background-color: red;
+	height: 100px;
+	width: 1000px;
 	border-radius: 10px;
 	position: relative;
 	top: 50px;
