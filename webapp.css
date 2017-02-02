@@ -65,6 +65,8 @@ float: right;
 	top: 50px;
 	left: 18%;
 	padding: 16px;
+	border-color:#31363F;
+	border: 20px #31363F;
 }
 
 .game.functions{
@@ -72,10 +74,9 @@ float: right;
 	font-size: 5000px;
 	width: 245px;
 	height: 100px;
-	
-	}
+}
 	
 .settings.functions{
 	padding: 32px;
 	font-size: 5000px;
-	}
+}
