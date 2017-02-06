@@ -1,85 +1,76 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
+
 /* CSS Document */
-body{
+body {
 	background-image: url("images/game-background.jpg");
 	background-size: 100%;
 }
 
-/* Box */
-.screen.box {
-	background-color: #303032;
-	height: 20px;
-	width: 1000px;
-	border-left: #303032 solid 16px;
-	border-right: #303032 solid 16px;
-	position: relative;
-	top: 50px;
-	left: 18%;
-	padding: 16px;
-}
- 
-/* Buttons */
-.keys {
-	position: relative;
-	top: 15px;
+.whole {
+	position: absolute;
+    margin: auto;
+    height:70%;
+    width:70%;
+    top:15%;
+	left:15%;
+	background-color: white;
+	background-image: url("images/silver.jpg");
 }
 
 #text {
-	border-left: #303032 solid 16px;
-	border-right: #303032 solid 16px;
+	// border-left: #303032 solid 16px;
+	// border-right: #303032 solid 16px;
 }
 
-
+/* Buttons */
 .buttons {
 	color: #C8C9CF;
 	top: 50px;
-	
-	}
+    padding: 16px;
+}
+
 .inventory {
-
-	
-	
-	}
-.bottom.buttons {
-float: right;
 }
 
-.lower.box {
-	background-color: #31363F;
-	height: 50px;
-	width: 1000px;
-	border-left: #303032 solid 16px;
-	border-right: #303032 solid 16px;
-	position: relative;
-	top: 50px;
-	left: 18%;
-	padding: 16px;
-}
-
-.middle.box {
-	background-color:white;
-	height: 250px;
-	width: 1000px;
-	border-radius: px;
-	position: relative;
-	top: 50px;
-	left: 18%;
-	padding: 16px;
-	border-color:#31363F;
-	border: 20px #31363F;
-	
-}
-.game.functions {
-	width: 245px;
+.functions {
 	top: 5px;
-	padding: 10px;
-	font-size:700px;
-	
-}
-	
-.settings.functions{
-	padding: 32px;
-	font-size: 5000px;
+	padding: 5px;
+	font-size:12px;
 }
 
+/* Box */
+.screen {
+	background-color: #303032;
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+	// border-left: #303032 solid 16px;
+	// border-right: #303032 solid 16px;
+	// padding: 16px;
+}
+ 
+.middle {
+	background-color: transparent;
+    height: 80%;
+    width: 90%;
+    position: absolute;
+	top: 10%;
+    left: 5%;
+	// border-radius: px;
+	// padding: 16px;
+	// border-color:#31363F;
+	// border: 20px #31363F;
+}
+
+.lower {
+    background-color: #31363F;
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    top: 90%;
+    // border-left: #303032 solid 16px;
+    // border-right: #303032 solid 16px;
+    // padding: 16px;
+}
 
