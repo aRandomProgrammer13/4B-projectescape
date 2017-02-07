@@ -21,7 +21,10 @@ body {
 	/*border-left: #303032 solid 16px;*/
 	/* border-right: #303032 solid 16px;*/
 }
-
+.story {
+font-size:36px;	
+	
+	}
 /* Buttons */
 .buttons {
 	color: #C8C9CF;
