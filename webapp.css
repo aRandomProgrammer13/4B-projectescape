@@ -9,11 +9,11 @@ body {
 .whole {
 	position: absolute;
     margin: auto;
-    height:70%;
+    height:100%;
     width:70%;
     top:15%;
 	left:15%;
-	background-color: white;
+	background-color: #D3D0D0;
 	background-image: url("images/silver.jpg");
 }
 
@@ -29,8 +29,6 @@ body {
     padding: 16px;
 }
 
-.inventory {
-}
 
 
 
