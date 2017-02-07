@@ -9,7 +9,7 @@ body {
 .whole {
 	position: absolute;
     margin: auto;
-    height:70%;
+    height:100%;
     width:70%;
     top:15%;
 	left:15%;
@@ -29,8 +29,6 @@ body {
     padding: 16px;
 }
 
-.inventory {
-}
 
 
 
