@@ -3,7 +3,6 @@ function changeDisplay(choice) {
 
 	switch(choice) {
 	case "forest":
-
 	// change story text
 
 document.getElementByID("story").innerHTML = "INSERT TEXT HERE";
@@ -18,9 +17,16 @@ document.getElementByID("picture").setAttribute("src", "newimage.jpg");
 
 // idea #1:
 
-document.getElementByID("buttons").innerHTML = "<input type='button' THIS IS NOT COMPLETE><ADD MORE BUTTONS HERE>";
+document.getElementByID("story").innerHTML = "<input type='button' THIS IS NOT COMPLETE><ADD MORE BUTTONS HERE>";
 
-// idea #2:
+
+
+
+
+
+
+
+/* idea #2:
 
 var btn1 = document.createElement("BUTTON");
 
@@ -39,6 +45,10 @@ btn2.innerHTML = "Head East";
 document.getElementByID("buttons").innerHTML = btn1 + btn2;
 
 break;
+
+*/
+
+// copy code from above and adjust
 
 case "path":
 
