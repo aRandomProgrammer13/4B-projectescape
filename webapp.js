@@ -1,7 +1,6 @@
 // JavaScript Document
 
 
-
 function myFunction(x) {
 	switch(x)
     	case 1:
@@ -41,6 +40,7 @@ function changeDisplay(choice) {
 			// this can be done many different ways
 			// idea #1:
 			document.getElementByID("buttons").innerHTML = "<input type='button' THIS IS NOT COMPLETE><ADD MORE BUTTONS HERE>";
+
 			// idea #2:
 			var btn1 = document.createElement("BUTTON");
 			btn1.setAttribute("onClick", "changeDisplay('path')");
