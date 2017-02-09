@@ -1,14 +1,5 @@
 
 // JavaScript Document
-function changeDisplay(choice) {
-	switch("choice") {
-		case "forest":
-			// change story
-			document.getElementByID("story").innerHTML = "INSERT TEXT HERE";
-			// change buttons
-			// this can be done many different ways
-			// idea #1:
-			document.getElementByID("buttons").innerHTML = "<input type='button' THIS IS NOT COMPLETE><ADD MORE BUTTONS HERE>";
 			// idea #2:
 			var btn1 = document.createElement("BUTTON");
 			btn1.setAttribute("onClick", "changeDisplay('path')");
