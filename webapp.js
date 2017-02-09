@@ -1,7 +1,7 @@
 
 // JavaScript Document
 function changeDisplay(choice) {
-	switch(choice) {
+	switch("choice") {
 		case "forest":
 			// change story
 			document.getElementByID("story").innerHTML = "INSERT TEXT HERE";
