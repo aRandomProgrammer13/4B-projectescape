@@ -1,4 +1,5 @@
 // JavaScript Document
+<<<<<<< Updated upstream
 
 
 function myFunction(x) {
@@ -61,3 +62,7 @@ function changeDisplay(choice) {
 }
 
 */
+=======
+		var e = document.getElementById("phase1")
+		e.visble = false;
+>>>>>>> Stashed changes
