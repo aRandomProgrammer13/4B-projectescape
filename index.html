@@ -9,61 +9,38 @@
 <script type="text/javascript" src="webapp.js"></script>
 </head>
 
-<body>
+<body onload="onLoadHandler();">
+
 <!-- HTML here-->
 <!--Add your HTML here-->
 
-<div class="whole">
-    <div class="screen box">
+    <div class="whole">
+        <div class="screen box">
 
-            <div class="buttons"><strong>Menu buttons:</strong>
-            	<input type="button" class="settings functions" onClick="alert('I will build it later.')" value="Save">
+            <div class="buttons">
+                <strong>Menu buttons:</strong>
+                <input type="button" class="settings functions" onClick="alert('I will build it later.')" value="Save">
                 <input type="button" class="settings functions" onClick="alert('I will build it later.')" value="Credits">
                 <input type="button" class="settings functions" onClick="alert('I will build it later.')" value="Quit">
-				
+
             </div>
 
         </div>
 
-
-<<<<<<< Updated upstream
-=======
-        <div id="choices" class="lower box">
-            	<input type="btn1" class="settings functions" onClick="alert('I will build it later.')" value="Quit"> 
-
->>>>>>> Stashed changes
         <div id="text" class="middle box">
-     
-			<p id="story">You find yourself tied to a chair in a creepy dark room. You assume that the door is locked. What do you do?</p>
-			<p id="demo">Click the button to change the text.</p>
-       <button id="button" onclick="myFunction(2)">Try it</button>
+
+            <p id="story"></p>
 
         </div>
 
         <div id="choices" class="lower box">
             <div class="choice buttons">
-              <input type="button" class="game functions" onClick="button('chair')" value="Try to get free from the chair">
-                <input type="button" class="game functions" onClick="button('stay')" value="Stay put">
-
-
-                
-                <input type="button" class="game functions" onClick="alert('This should make the text box appear!')" value="continue">
-
-
-
-
-        <div id="choices" class="lower box">
-            <div class="choice buttons">
-              <input type="button" class="game functions" onClick="button('chair')" value="Try to get free from the chair">
-                <input type="button" class="game functions" onClick="button('stay')" value="Stay put">
-
-
-<<<<<<< Updated upstream
-=======
- 
->>>>>>> Stashed changes
+                <input type="button" class="game functions" id="choice1">
+                <input type="button" class="game functions" id="choice2">
             </div>
         </div>
+    </div>
+
 </body>
 </html>
 
