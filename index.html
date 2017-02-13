@@ -19,11 +19,7 @@
             <div class="buttons">
 
                 
-                <span><strong>Menu buttons:</strong></span>
-                <input type="button" class="settings functions" onClick="alert('I will build it later.')" value="Save">
-                <input type="button" class="settings functions" onClick="alert('I will build it later.')" value="Credits">
-                <input type="button" class="settings functions" onClick="alert('I will build it later.')" value="Quit">
-				
+             
             </div>
 
         </div>
@@ -35,6 +31,34 @@
 			<p id="demo">Click the button to change the text.</p>
        <button id="button" onclick="myFunction(2)">Try it</button>
 
+		<script type="text/javascript">
+function myFunction(x) {
+	if(document.getElementById("demo").innerHTML = "Nothing happened"){
+	 document.getElementById("button").setAttribute("onClick", "myFunction(2)");
+	}
+	
+	else{
+	  document.getElementById("button").setAttribute("onClick", "myFunction(1)");
+      
+	}
+	
+	/*
+	
+	switch(x)
+    	case 1:
+	    	document.getElementById("demo").innerHTML = "Nothing happened";
+	        document.getElementById("button").setAttribute("onClick", "myFunction(2)");
+			break;
+			
+		case 2:
+	    	document.getElementById("demo").innerHTML = "Someone is approaching!";
+    	    document.getElementById("button").setAttribute("onClick", "myFunction(1)");
+        	break;
+    }
+}
+
+*/
+</script>
         </div>
 
         <div id="choices" class="lower box">

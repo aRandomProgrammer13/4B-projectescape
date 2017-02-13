@@ -1,20 +1,6 @@
 // JavaScript Document
 
 
-function myFunction(x) {
-	switch(x)
-    	case 1:
-	    	document.getElementById("demo").innerHTML = "Nothing happened";
-	        document.getElementById("button").setAttribute("onClick", "myFunction(2)");
-			break;
-			
-		case 2:
-	    	document.getElementById("demo").innerHTML = "Someone is approaching!";
-    	    document.getElementById("button").setAttribute("onClick", "myFunction(1)");
-        	break;
-    }
-}
-
 
 
 
