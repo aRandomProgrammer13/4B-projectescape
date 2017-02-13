@@ -9,28 +9,32 @@
 <script type="text/javascript" src="webapp.js"></script>
 </head>
 
-<body>
+<body onload="onLoadHandler();">
+
 <!-- HTML here-->
 <!--Add your HTML here-->
 
-<div class="whole">
-    <div class="screen box">
+    <div class="whole">
+        <div class="screen box">
 
             <div class="buttons">
 
+<<<<<<< HEAD
                 
              
             </div>
 
         </div>
+=======
+                <strong>Menu buttons:</strong>
+                <input type="button" class="settings functions" onClick="alert('I will build it later.')" value="Save">
+                <input type="button" class="settings functions" onClick="alert('I will build it later.')" value="Credits">
+                <input type="button" class="settings functions" onClick="alert('I will build it later.')" value="Quit">
+>>>>>>> origin/Version-1.0
 
 
-        <div id="text" class="middle box">
-     
-			<p id="story">You find yourself tied to a chair in a creepy dark room. You assume that the door is locked. What do you do?</p>
-			<p id="demo">Click the button to change the text.</p>
-       <button id="button" onclick="myFunction(2)">Try it</button>
 
+<<<<<<< HEAD
 		<script type="text/javascript">
 function myFunction(x) {
 	if(document.getElementById("demo").innerHTML = "Nothing happened"){
@@ -65,15 +69,36 @@ function myFunction(x) {
             <div class="choice buttons">
               <input type="button" class="game functions" onClick="button('chair')" value="Try to get free from the chair">
                 <input type="button" class="game functions" onClick="button('stay')" value="Stay put">
-
-
+=======
                 
-                <input type="button" class="game functions" onClick="alert('This should make the text box appear!')" value="continue">
+                <span><strong>Escape</strong></span>
+                
+				
+>>>>>>> origin/Version-1.0
 
+            </div>
 
+        </div>
 
+        <div id="text" class="middle box">
+
+            <p id="story"></p>
+
+<<<<<<< HEAD
 	</div>
 </div>
+=======
+        </div>
+
+        <div id="choices" class="lower box">
+            <div class="choice buttons">
+                <input type="button" class="game functions" id="choice1">
+                <input type="button" class="game functions" id="choice2">
+
+            </div>
+        </div>
+    </div>
+>>>>>>> origin/Version-1.0
 
 </body>
 </html>
