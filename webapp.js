@@ -39,7 +39,7 @@ function updateScreen(newState) {
             
         case "S3" :
            text = "When you try to get the object you decide to get it by tipping your chair over so that your hand was by the object you then cut yourself free.";
-           choice1Text = "Do you break the window and jump out?";
+           choice1Text = "Do you break tZCXhe window and jump out?";
            choice1NextState = "S7";
            choice2Text = "Or try opening the front door and escape.";
            choice2NextState = "S8";
@@ -68,4 +68,8 @@ function updateScreen(newState) {
        document.getElementById("choice2").value = choice2Text;
        document.getElementById("choice2").setAttribute("onClick", "updateScreen('" + choice2NextState + "');");
    }
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes
