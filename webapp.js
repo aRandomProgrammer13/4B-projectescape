@@ -1,55 +1,3 @@
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-// JavaScript Document
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-
-function changeDisplay(choice) {
-	switch(choice) {
-		case "forest":
-			// change story
-			document.getElementByID("story").innerHTML = "INSERT TEXT HERE";
-			// change buttons
-			// this can be done many different ways
-			// idea #1:
-			document.getElementByID("buttons").innerHTML = "<input type='button' THIS IS NOT COMPLETE><ADD MORE BUTTONS HERE>";
-
-			// idea #2:
-			var btn1 = document.createElement("BUTTON");
-			btn1.setAttribute("onClick", "changeDisplay('path')");
-			btn1.innerHTML = "Take the path";
-			var btn2 = document.createElement("BUTTON");
-			btn2.setAttribute("onClick", "changeDisplay('east')");
-			btn2.innerHTML = "Head East";
-			// you could add as many buttons as you needed here
-			document.getElementByID("buttons").innerHTML = btn1 + btn2;
-			break;
-		case "path":
-			// copy code from above and adjust
-		case "east":
-			// copy code from above and adjust
-		case "west":
-			// copy code from above and adjust
-	}
-=======
-=======
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
 function onLoadHandler() {
     updateScreen("S");
 }
@@ -89,6 +37,14 @@ function updateScreen(newState) {
             choice2NextState = "S6";
             break;
 			
+		case "S3" :
+            text = "When you try to get the object you decide to get it by tipping your chair over so that your hand was by the object you then cut yourself free.";
+            choice1Text = "Do you break the window and jump out?";
+            choice1NextState = "S7";
+            choice2Text = "Or try opening the front door and escape.";
+            choice2NextState = "S8";
+            break;
+			
 			
 
         default:
@@ -112,102 +68,5 @@ function updateScreen(newState) {
         document.getElementById("choice2").value = choice2Text;
         document.getElementById("choice2").setAttribute("onClick", "updateScreen('" + choice2NextState + "');");
     }
->>>>>>> origin/Version-1.0
 }
 
-=======
-// JavaScript Document
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-function changeDisplay(choice) {
-	switch("choice") {
-=======
-
-
-function myFunction(x) {
-	switch(x)
-    	case 1:
-	    	document.getElementById("demo").innerHTML = "Nothing happened";
-	        document.getElementById("button").setAttribute("onClick", "myFunction(2)");
-			break;
-			
-		case 2:
-	    	document.getElementById("demo").innerHTML = "Someone is approaching!";
-    	    document.getElementById("button").setAttribute("onClick", "myFunction(1)");
-        	break;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-
-function changeDisplay(choice) {
-	switch(choice) {
->>>>>>> origin/Version-1.0
-		case "forest":
-			// change story
-			document.getElementByID("story").innerHTML = "INSERT TEXT HERE";
-			// change buttons
-			// this can be done many different ways
-			// idea #1:
-			document.getElementByID("buttons").innerHTML = "<input type='button' THIS IS NOT COMPLETE><ADD MORE BUTTONS HERE>";
-
-<<<<<<< HEAD
-	
-	function button(choice) {
-	switch(choice) {
-		case "chair":
-			// change story text
-			document.getElementByID("story").innerHTML = "INSERT TEXT HERE";
-			// change picture
-			document.getElementByID("picture").setAttribute("src", "newimage.jpg");
-			// change buttons
-			// this can be done many different ways
-			// idea #1:
-			document.getElementById("buttons").innerHTML = "<input type='button' THIS IS NOT COMPLETE><ADD MORE BUTTONS HERE>";
->>>>>>> Stashed changes
->>>>>>> Stashed changes
-=======
->>>>>>> origin/Version-1.0
-			// idea #2:
-			var btn1 = document.createElement("BUTTON");
-			btn1.setAttribute("onClick", "changeDisplay('path')");
-			btn1.innerHTML = "Take the path";
-			var btn2 = document.createElement("BUTTON");
-			btn2.setAttribute("onClick", "changeDisplay('east')");
-			btn2.innerHTML = "Head East";
-			// you could add as many buttons as you needed here
-<<<<<<< Updated upstream
-			document.getElementByID("buttons").innerHTML = btn1 + btn2;
-			break;
-		case "path":
-=======
-			document.getElementByID("buttons").innerHTML = chair + stay;
-			break;
-		case "stay":
->>>>>>> Stashed changes
-			// copy code from above and adjust
-		case "east":
-			// copy code from above and adjust
-		case "west":
-			// copy code from above and adjust
-	}
-}
-
-*/
->>>>>>> Stashed changes
