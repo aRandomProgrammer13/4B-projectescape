@@ -88,6 +88,8 @@ function updateScreen(newState) {
             choice2Text = "Stay quiet";
             choice2NextState = "S6";
             break;
+			
+			
 
         default:
             text = "ERROR";
