@@ -37,6 +37,8 @@ Insert answer here.
 This is our initial release. We hope you enjoy it!
 
 ## Credits
-* Joe Schmoe
-* Bob Smith
-* Susan Johnson
+* Bryce Chen
+* Andrew Fu
+* Jasmine Sohn
+* Louise Wang
+* Alvin Xiao
