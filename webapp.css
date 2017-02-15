@@ -1,6 +1,4 @@
-﻿
-
-/* CSS Document */
+﻿/* CSS Document */
 body {
 	background-image: url("images/game-background.jpg");
 	background-size: 100%;
@@ -48,7 +46,6 @@ body {
 }
  
 .middle {
-	display: none;
 	background-color: transparent;
     height: 80%;
     width: 90%;
@@ -66,9 +63,8 @@ body {
     height: 10%;
     width: 100%;
     position: absolute;
-    top: 90%
+    top: 90%;
     /*border-left: #303032 solid 16px;*/
     /* border-right: #303032 solid 16px;*/
     /* padding: 16px;*/
 }
-
