@@ -40,10 +40,45 @@ function updateScreen(newState) {
         case "S3":
             text = "When you try to get the object you decide to get it by tipping your chair over so that your hand was by the object you then cut yourself free.";
             choice1Text = "Do you break the window and jump out?";
-            choice1NextState = "S.5";
+            choice1NextState = "S5";
             choice2Text = "Or try opening the front door and escape.";
-            choice2NextState = "S.6";
+            choice2NextState = "S6";
             break;
+			
+		case "S.3":
+            text = "You call for help but the person yells, 'be quiet!'";
+            choice1Text = "Still call for help";
+            choice1NextState = "S.7";
+            choice2Text = "Shut up";
+            choice2NextState = "S.4";
+            break;
+			
+		case "S.4":
+            text = "You stayed quiet and the warning fades and the foot steps walks away.'";
+            choice1Text = "Still call for help";
+            choice1NextState = "S.6";
+			 break;
+		
+		case "S.6":
+			text ="not done yet";
+			 choice1Text = "restart";
+            choice1NextState = "S";
+            choice2Text = "restart";
+            choice2NextState = "S";
+			 break;
+		
+		case "S.7":
+			text ="the voice roared 'enough!' and the shadow walked in and shot you in the head"
+			choice1Text ="continue";
+			choice1NextState = "Dead";
+			 break;
+			
+		case "Dead":
+			text ="you died, restart?"
+			choice1Text ="restart";
+			choice1NextState = "S";
+            break;
+
 	
         default:
             text = "ERROR";
