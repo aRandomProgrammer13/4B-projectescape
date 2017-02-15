@@ -45,10 +45,10 @@ function updateScreen(newState) {
             choice2NextState = "S.6";
             break;
 			
-			case "S5":
+		case "S5":
             text = "You land in a large garbage bin full of trash bags"
             choice1NextState = "S7";
-            choice2Text = "Or try opening the front door and escape.";
+            choice2Text = "The door is locked and you twist so hard and get a sprained wrist.";
             choice2NextState = "S8";
             break;
 
