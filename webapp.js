@@ -32,14 +32,21 @@ function updateScreen(newState) {
         case "S2":
             text = "You stay put and then hear footsteps coming down the hall toward you.  Do you call for help or stay quiet?";
             choice1Text = "Call for help";
-            choice1NextState = "S5";
+            choice1NextState = "S.3";
             choice2Text = "Stay quiet";
-            choice2NextState = "S6";
+            choice2NextState = "S.4";
             break;
 
         case "S3":
             text = "When you try to get the object you decide to get it by tipping your chair over so that your hand was by the object you then cut yourself free.";
             choice1Text = "Do you break the window and jump out?";
+            choice1NextState = "S.5";
+            choice2Text = "Or try opening the front door and escape.";
+            choice2NextState = "S.6";
+            break;
+			
+			case "S5":
+            text = "You land in a large garbage bin full of trash bags"
             choice1NextState = "S7";
             choice2Text = "Or try opening the front door and escape.";
             choice2NextState = "S8";
