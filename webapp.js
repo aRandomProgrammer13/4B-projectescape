@@ -64,7 +64,6 @@ function updateScreen(newState) {
             text = "You start to loose consiousness, and you fade into darkness....";
 			choice1Text="You died. Restart?"
 			choice2Text="You died. Restart?"
-
             break;
 			
         default:
