@@ -51,7 +51,22 @@ function updateScreen(newState) {
             choice2Text = "Or try opening the front door and escape.";
             choice2NextState = "S8";
             break;
+			
+		 case "S5":
+            text = "The shadow heard you and grabbed you on the neck, you can't breath.";
+            choice1Text = "Think about your life";
+            choice1NextState = "S9";
+            choice2Text = "struggle";
+            choice2NextState = "S10";
+            break;
+			
+		case "S9":
+            text = "You start to loose consiousness, and you fade into darkness....";
+			choice1Text="You died. Restart?"
+			choice2Text="You died. Restart?"
 
+            break;
+			
         default:
             text = "ERROR";
             break;
