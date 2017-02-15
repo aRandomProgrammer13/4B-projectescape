@@ -14,14 +14,16 @@ function updateScreen(newState) {
     switch (currentState) {
 
         case "S":
+		/* This is the start of the story */
             text = "You find yourself tied to a chair in a creepy dark room. You assume that the door is locked. What do you do?";
             choice1Text = "Try to get free from the chair";
             choice1NextState = "S1";
             choice2Text = "Stay put";
-            choice2NextState = "S2";
+            choice2NextState = "S.2";
             break;
 
         case "S1":
+		/*This is the "S" storyline */
             text = "The ropes are too thick and bound too tight for you to move.  But then you find a sharp object by the floor next to you.";
             choice1Text = "Try to get the object";
             choice1NextState = "S3";
@@ -29,7 +31,8 @@ function updateScreen(newState) {
             choice2NextState = "S4";
             break;
 
-        case "S2":
+        case "S.2":
+		/*This is the "S." storyline */
             text = "You stay put and then hear footsteps coming down the hall toward you.  Do you call for help or stay quiet?";
             choice1Text = "Call for help";
             choice1NextState = "S.3";
@@ -54,8 +57,8 @@ function updateScreen(newState) {
             break;
 			
 		case "S.4":
-            text = "You stayed quiet and the warning fades and the foot steps walks away.'";
-            choice1Text = "Still call for help";
+            text = "You stayed quiet and the warning fades and the foot steps walks away.";
+            choice1Text = "continue";
             choice1NextState = "S.6";
 			 break;
 		
