@@ -26,9 +26,9 @@ function updateScreen(newState) {
 		/*This is the "S" storyline */
             text = "The ropes are too thick and bound too tight for you to move.  But then you find a sharp object by the floor next to you.";
             choice1Text = "Try to get the object";
-            choice1NextState = "S3";
+            choice1NextState = "S2";
             choice2Text = "Leave it alone";
-            choice2NextState = "S4";
+            choice2NextState = "S3";
             break;
 
         case "S.2":
@@ -40,13 +40,16 @@ function updateScreen(newState) {
             choice2NextState = "S.4";
             break;
 
-        case "S3":
+        case "S2":
             text = "When you try to get the object you decide to get it by tipping your chair over so that your hand was by the object you then cut yourself free.";
             choice1Text = "Do you break the window and jump out?";
-            choice1NextState = "S5";
+            choice1NextState = "S4";
             choice2Text = "Or try opening the front door and escape.";
-            choice2NextState = "S6";
+            choice2NextState = "S5";
             break;
+			
+		case "S3":
+	
 			
 		case "S.3":
             text = "You call for help but the person yells, 'be quiet!'";
@@ -57,24 +60,34 @@ function updateScreen(newState) {
             break;
 			
 		case "S.4":
-            text = "You stayed quiet and the warning fades and the foot steps walks away.";
+            text = "You stayed quiet and the foot steps walks away.";
             choice1Text = "continue";
-            choice1NextState = "S.6";
+            choice1NextState = "S.5";
 			 break;
 		 
-		case "S.6":
-			text ="not done yet";
-			 choice1Text = "restart";
-            choice1NextState = "S";
-            choice2Text = "restart";
-            choice2NextState = "S";
+		case "S.5":
+			text ="You then decide what to do next and see a silver glint on the floor";
+			 choice1Text = "Grab the object";
+            choice1NextState = "S.6";
 			 break;
+		
+		case "S.6":
+			text ="You are tring to break free from the ropes while using the sharp object to cut yourself free"
+			choice1Text ="Keep on cutting";
+			choice1NextState ="S.8";
+			break;
 		
 		case "S.7":
 			text ="the voice roared 'enough!' and the shadow walked in and shot you in the head"
 			choice1Text ="continue";
 			choice1NextState = "Dead";
 			 break;
+		
+		case "S.8":
+			text ="You keep on cutting, but you accidently slit across your wrist. You dropp the object and cry in fustration."
+			choiceText ="Cry (you have no choice for this one)"
+			choice1NextState ="S.10"
+			break;
 			
 		case "Dead":
 			text ="you died, restart?"
