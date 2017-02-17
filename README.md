@@ -6,6 +6,7 @@
 
 This game is a role playing game which makes you feel on the edge of your seat at every decision you make.
 
+<!--
 ## FAQs
 
 ### Insert question here?
@@ -15,7 +16,7 @@ Insert answer here.
 Insert answer here.
 
 ## Changelog
-<!--
+
 ### Version 1.1
 
 #### Bug fixes
