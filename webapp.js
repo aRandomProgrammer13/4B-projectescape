@@ -54,7 +54,7 @@ function updateScreen(newState) {
 		case "S.3":
             text = "You call for help but the person yells, 'be quiet!'";
             choice1Text = "Still call for help";
-            choice1NextState = "S.7";
+            choice1NextState = "S.10";
             choice2Text = "Shut up";
             choice2NextState = "S.4";
             break;
@@ -77,16 +77,43 @@ function updateScreen(newState) {
 			choice1NextState ="S.8";
 			break;
 		
-		case "S.7":
-			text ="the voice roared 'enough!' and the shadow walked in and shot you in the head"
-			choice1Text ="continue";
-			choice1NextState = "Dead";
-			 break;
 		
 		case "S.8":
 			text ="You keep on cutting, but you accidently slit across your wrist. You dropp the object and cry in fustration."
-			choice1Text ="Cry (you have no choice for this one)"
-			choice1NextState ="S.10"
+			choice1Text ="Cry (you have no choice for this one)";
+			choice1NextState ="S.10";
+			break;
+			
+		case "S.10":
+			text ="There is suddenly a sound of keys jingling and the door knob turns."
+			choice1Text ="Stay back onto chair";
+			choice1NextState ="S.11";
+			break;
+			
+		case "S.11":
+			text ="A person with a ski mask comes in and laughs"
+			choice1Text ="continue";
+			choice1NextState ="S.12";
+			break;
+			
+		case "S.12":
+			text ="The kidnapper asks, 'Do you want to escape?'"
+			choice1Text ="Yes";
+			choice1NextState ="S.13";
+			choice2Text ="No";
+			choice2NextState ="S.14";
+			break;
+			
+		case "S.13":
+			text  ="He said too bad and shot you in the head..."
+			choice1Text ="continue";
+			choice1NextState ="Dead";
+			break;
+		
+		case "S.14":
+			text ="The man said 'Ok....For being honest...I'll grant you a quick death for annoying me.' Then he shot you on the head.'"
+			choice1Text ="continue";
+			choice1NextState ="Dead";
 			break;
 	
 		case "Dead":
