@@ -61,7 +61,7 @@ function updateScreen(newState) {
             choice1Text = "continue";
             choice1NextState = "S.6";
 			 break;
-		
+		 
 		case "S.6":
 			text ="not done yet";
 			 choice1Text = "restart";
