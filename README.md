@@ -2,7 +2,9 @@
 
 # Project Escape
 
-## This game is a role playing game which makes you feel on the edge of your seat at every decision you make.
+## Description
+
+This game is a role playing game which makes you feel on the edge of your seat at every decision you make.
 
 ## FAQs
 
