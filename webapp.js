@@ -85,10 +85,10 @@ function updateScreen(newState) {
 		
 		case "S.8":
 			text ="You keep on cutting, but you accidently slit across your wrist. You dropp the object and cry in fustration."
-			choiceText ="Cry (you have no choice for this one)"
+			choice1Text ="Cry (you have no choice for this one)"
 			choice1NextState ="S.10"
 			break;
-			
+	
 		case "Dead":
 			text ="you died, restart?"
 			choice1Text ="restart";
