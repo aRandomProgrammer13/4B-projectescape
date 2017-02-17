@@ -44,11 +44,18 @@ function updateScreen(newState) {
             text = "When you try to get the object you decide to get it by tipping your chair over so that your hand was by the object you then cut yourself free.";
             choice1Text = "Do you break the window and jump out?";
             choice1NextState = "S4";
-            choice2Text = "Or try opening the front door and escape.";
+            choice2Text = "Or try opening the door and escape.";
             choice2NextState = "S5";
             break;
 			
 		case "S3":
+			text ="You leave the object alone so you are still tied to the chair, though you still made a lot of noise during your struggle."
+			 choice1Text = "Continue";
+            choice1NextState = "S.10";
+			
+		case "S4":
+			text ="You broke the window with the sharp object and jumped out of the window, you landed into a bin full of trash bags."
+			choice1Text =""
 	
 			
 		case "S.3":
