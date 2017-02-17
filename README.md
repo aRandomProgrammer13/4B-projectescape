@@ -1,12 +1,10 @@
 
 
-# Project Escape
+# Put your app name here!
 
-## Description
+## Projectescape
+This game is an interesting and the edge of your seat RPG. You start in a dark room and proceed through the story from there.
 
-This game is a role playing game which makes you feel on the edge of your seat at every decision you make.
-
-<!--
 ## FAQs
 
 ### Insert question here?
@@ -14,7 +12,7 @@ Insert answer here.
 
 ### Insert question here?
 Insert answer here.
-
+<!--
 ## Changelog
 
 ### Version 1.1

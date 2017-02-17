@@ -1,82 +1,63 @@
-@charset "UTF-8";
-<<<<<<< HEAD
-h1{
-	color:"#5CC3DE";
+body {
+    background-image: url("images/game-background.jpg");
+    background-size: 100%;
 }
-=======
-/* CSS Document */
-body{
-	background-image: url("images/game-background.jpg");
-	background-size: 100%;
+.whole {
+    position: absolute;
+    margin: auto;
+    height:70%;
+    width:70%;
+    top:15%;
+    left:15%;
+    background-color: #D3D0D0;
+    background-image: url("images/silver.jpg");
 }
-
-
-
-
-
-
-
-
-/* Calculator Box */
-.box {
-	background-color: #525252;
-	height: 900px;
-	width: 1250px;
-	border-radius: 10px;
-	position: relative;
-	top: 65px;
-	left: 18%;
+#text {
+    /*border-left: #303032 solid 16px;*/
+    /* border-right: #303032 solid 16px;*/
 }
-
-/* Calculator Buttons */
-.keys {
-	position: relative;
-	top: 15px;
+/*
+.story {
+    font-size:36px; 
 }
-.button {
-	border-radius: 50px;
-	font: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	width: 40px;
-	height: 30px;
-	border: none;
-	border-radius: 8px;
-	margin-left: 17px;
-	cursor: pointer;
-	border-top: 2px solid transparent;
+*/
+/* Buttons */
+.buttons {
+    color: #C8C9CF;
+    top: 50px;
+    padding: 16px;
 }
-.button.function {
-	color: white;
-	width: 220px;
-	background-color: #c64f81;
-	border-bottom: black 2px solid;
-	border-top: 2px #6f6f6f solid;
+/* Box */
+.screen {
+    background-color: #303032;
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    /* border-left: #303032 solid 16px;*/
+    /* border-right: #303032 solid 16px;*/
+    /*padding: 16px;*/
 }
-.button.operator {
-	color: white;
-	background-color: #4d5966;
-	border-bottom: black 2px solid;
-	border-top: 2px #6f6f6f solid;
+ 
+.middle {
+    background-color: transparent;
+    height: 80%;
+    width: 90%;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    /* border-radius: px;*/
+    /* padding: 16px;*/
+    /* border-color:#31363F;*/
+    /* border: 20px #31363F;*/
 }
-.button.number {
-	color: white;
-	background-color: #7091ab;
-	border-bottom: black 2px solid;
-	border-top: 2px #6f6f6f solid;
+.lower {
+    background-color: #31363F;
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    top: 90%;
+    /*border-left: #303032 solid 16px;*/
+    /* border-right: #303032 solid 16px;*/
+    /* padding: 16px;*/
 }
-
-/* Simulate Button Press */
-.function:active {
-	border-top: black 2px solid;
-	border-bottom: 2px #6f6f6f solid;
-}
-.operator:active {
-	border-top: black 2px solid;
-	border-bottom: 2px #303030 solid;
-}
-.number:active {
-	border-top: black 2px solid;
-	border-bottom: 2px #6f6f6f solid;
-}
-	
-
->>>>>>> Version-1.0
