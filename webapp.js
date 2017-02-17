@@ -152,3 +152,4 @@ function updateScreen(newState) {
         document.getElementById("choice2").setAttribute("onClick", "updateScreen('" + choice2NextState + "');");
     }
 }
+
