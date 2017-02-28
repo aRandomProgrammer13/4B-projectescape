@@ -112,7 +112,7 @@ function updateScreen(newState) {
 			break;
 			
 		case "S.13":
-			text  ="He said too bad and shot you in the head..."
+			text  ="You jump out of the window and escape and you live"
 			choice1Text ="continue";
 			choice1NextState ="Dead";
 			break;
