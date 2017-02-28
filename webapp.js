@@ -27,14 +27,14 @@ function updateScreen(newState) {
             break;
         case "S.2":
         /*This is the "S." storyline */
-            text = "You stay put and then hear footsteps coming down the hall toward you.  Do you call for help or stay quiet?";
+            text = "You stay put and then hear footsteps coming down the hall towards you.  Do you call for help or stay quiet?";
             choice1Text = "Call for help";
             choice1NextState = "S.3";
             choice2Text = "Stay quiet";
             choice2NextState = "S.4";
             break;
         case "S2":
-            text = "When you try to get the object you decide to get it by tipping your chair over so that your hand was by the object you then cut yourself free.";
+            text = "When you try to get the object you decide to get it by tipping your chair over so that your hand is by the object. You then cut yourself free.";
             choice1Text = "Do you break the window and jump out?";
             choice1NextState = "S4";
             choice2Text = "Or try opening the door and escape.";
@@ -47,7 +47,7 @@ function updateScreen(newState) {
             choice1NextState = "S.10";
             
         case "S4":
-            text ="You broke the window with the sharp object and jumped out of the window, you landed into a bin full of trash bags."
+            text ="You break the window with the sharp object, which you discover to be a numbchuck, and jump out of the window. You land into a bin full of trash bags."
             choice1Text =""
     
             
@@ -60,7 +60,7 @@ function updateScreen(newState) {
             break;
             
         case "S.4":
-            text = "You stayed quiet and the foot steps walks away.";
+            text = "You stay quiet and you hear the footsteps rapidly disappear.";
             choice1Text = "continue";
             choice1NextState = "S.5";
              break;
@@ -72,20 +72,20 @@ function updateScreen(newState) {
              break;
         
         case "S.6":
-            text ="You are tring to break free from the ropes while using the sharp object to cut yourself free"
+            text ="You try to break free from the ropes while using the sharp object to cut yourself free"
             choice1Text ="Keep on cutting";
             choice1NextState ="S.8";
             break;
         
         
         case "S.8":
-            text ="You keep on cutting, but you accidently slit across your wrist. You dropp the object and cry in fustration."
+            text ="You keep on cutting, but you accidently cut your wrist. You drop the object and cry in fustration."
             choice1Text ="Cry (you have no choice for this one)";
             choice1NextState ="S.10";
             break;
             
         case "S.10":
-            text ="There is suddenly a sound of keys jingling and the door knob turns."
+            text ="There is suddenly a sound of keys jingling and the doorknob turns."
             choice1Text ="Stay back onto chair";
             choice1NextState ="S.11";
             break;
@@ -105,19 +105,19 @@ function updateScreen(newState) {
             break;
             
         case "S.13":
-            text  ="He said too bad and shot you in the head..."
+            text  ="He says, 'Too bad' and shoots you in the head..."
             choice1Text ="continue";
             choice1NextState ="Dead";
             break;
         
         case "S.14":
-            text ="The man said 'Ok....For being honest...I'll grant you a quick death for annoying me.' Then he shot you on the head.'"
+            text ="The man says 'For being honest...I'll grant you a quick death for annoying me.' Then he smiles and shoots you in the head.'"
             choice1Text ="continue";
             choice1NextState ="Dead";
             break;
     
         case "Dead":
-            text ="you died, restart?"
+            text ="You died, restart?"
             choice1Text ="restart";
             choice1NextState = "S";
             break;
