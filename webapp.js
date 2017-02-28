@@ -52,7 +52,7 @@ function updateScreen(newState) {
     
             
         case "S.3":
-            text = "You call for help but a person yells, 'be quiet!'";
+            text = "You call for help but the person yells, 'be quiet!'";
             choice1Text = "Still call for help";
             choice1NextState = "S.10";
             choice2Text = "Shut up";
