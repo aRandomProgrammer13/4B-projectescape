@@ -13,7 +13,7 @@ body {
     background-image: url("images/silver.jpg");
 }
 .cover {
-	background-color: #747474;
+	background-color: #403C3C;
 	}
 #text {
     /*border-left: #303032 solid 16px;*/
@@ -30,6 +30,7 @@ body {
 	width: 150px;
 	height: 30px;
 	margin: 45%;
+	color: #A70003;
 	}
 
 .buttons {
