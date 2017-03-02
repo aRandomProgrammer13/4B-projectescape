@@ -51,11 +51,13 @@ function updateScreen(newState) {
 		case "S3":
 			text ="You leave the object alone so you are still tied to the chair, though you still made a lot of noise during your struggle."
 			 choice1Text = "Continue";
-            choice1NextState = "S.10";
+            choice1NextState = "S.11";
+			break;
 			
 		case "S4":
 			text ="You broke the window with the sharp object and jumped out of the window, you landed into a bin full of trash bags."
 			choice1Text =""
+			break;
 	
 			
 		case "S.3":
@@ -114,7 +116,7 @@ function updateScreen(newState) {
 		case "S.13":
 			text  ="You jump out of the window and escape and you live"
 			choice1Text ="continue";
-			choice1NextState ="Dead";
+			choice1NextState ="S";
 			break;
 		
 		case "S.14":
