@@ -18,20 +18,17 @@ Insert answer here.
 ### Version 1.1
 
 #### Bug fixes
- * Fixed thing
- * Fixed other thing
+ * Fixed storyline conflicts
+ * Fixed code
 
 #### Changes
- * Added thing
- * Removed thing
+ * Added restart button and finished the storyline
+ * Removed bugs
  * Added a group of related things:
-   * one
-   * two
-   * three
-   * four
- * If you want to be fancy, you can use a...
-   * + to indicate something added and a...
-   * - to indicate something removed, just be careful with your markdown syntax!
+   * added S5 storyline
+   * added S6 storyline
+   * added S7 storyline
+
 -->
 ### Version 1.0
 This is our initial release. We hope you enjoy it!
