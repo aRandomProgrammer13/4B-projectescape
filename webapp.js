@@ -89,7 +89,7 @@ function updateScreen(newState) {
 			break;
 		
 		case "S7":
-			text = "You go to the police shop and you live";
+			text = "You go to the police station and you live";
 			choice1Text = "continue";
 			choice1NextState = "S";
 			break;
@@ -175,4 +175,6 @@ function updateScreen(newState) {
         document.getElementById("choice2").setAttribute("onClick", "updateScreen('" + choice2NextState + "');");
     }
 }
+
+	
 
