@@ -56,9 +56,9 @@ function updateScreen(newState) {
 			
 		case "S4":
 			text ="You broke the window with the sharp object and jumped out of the window, you landed into a bin full of trash bags."
-			choice1Text =""
+			choice1Text = "continue"
+			choice1NextState = "S5"
 			break;
-	
 			
 		case "S.3":
             text = "You call for help but the person yells, 'be quiet!'";
@@ -68,15 +68,36 @@ function updateScreen(newState) {
             choice2NextState = "S.4";
             break;
 			
+		case "S5":
+			text = "Do you go left or right?";
+			choice1Text = "Left";
+			choice1NextState = "S6";
+			choice2Text = "Right";
+			choice2NextState = "S7"
+			break;
+			
 		case "S.4":
             text = "You stayed quiet and the foot steps walks away.";
             choice1Text = "continue";
             choice1NextState = "S.5";
-			 break;
+			break;
+			 
+		case "S6":
+			text = "You accidentally run into a group of thugs and they kill you. Try again.";
+			choice1Text = "continue";
+			choice1NextState ="Dead";
+			break;
+		
+		case "S7":
+			text = "You go to the police shop and you live";
+			choice1Text = "continue";
+			choice1NextState = "S";
+			break;
+		
 		 
 		case "S.5":
 			text ="You then decide what to do next and see a silver glint on the floor";
-			 choice1Text = "Grab the object";
+			choice1Text = "Grab the object";
             choice1NextState = "S.6";
 			 break;
 		
