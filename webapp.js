@@ -1,4 +1,4 @@
-function onLoadHandler() {
+ function onLoadHandler() {
     updateScreen("S");
 }
 function updateScreen(newState) {
@@ -11,7 +11,7 @@ function updateScreen(newState) {
     switch (currentState) {
         case "S":
         /* This is the start of the story */
-            text = "You find yourself tied to a chair in a creepy dark room. You assume that the door is locked. What do you do?";
+            text = "You find yourself tied to a chair in a creepy dark room with only a dingy window. You assume that the door is locked. What do you do?";
             choice1Text = "Try to get free from the chair";
             choice1NextState = "S1";
             choice2Text = "Stay put";
@@ -19,7 +19,7 @@ function updateScreen(newState) {
             break;
         case "S1":
         /*This is the "S" storyline */
-            text = "The ropes are too thick and bound too tight for you to move.  But then you find a sharp object by the floor next to you.";
+            text = "The ropes are too thick and bound too tight for you to move your upper torso.  But then you find a sharp object by the floor next to you.";
             choice1Text = "Try to get the object";
             choice1NextState = "S2";
             choice2Text = "Leave it alone";
@@ -47,7 +47,7 @@ function updateScreen(newState) {
             choice1NextState = "S.10";
             
         case "S4":
-            text ="You break the window with the sharp object, which you discover to be a numbchuck, and jump out of the window. You land into a bin full of trash bags."
+            text ="You break the window with the sharp object, which you discover to be a dagger, and jump out of the window. You land into a bin full of trash bags."
             choice1Text =""
     
             
@@ -91,7 +91,7 @@ function updateScreen(newState) {
             break;
             
         case "S.11":
-            text ="A person with a ski mask comes in and laughs"
+            text ="A person with a rainbow ski mask with fluffy unicorns on it comes in and laughs"
             choice1Text ="continue";
             choice1NextState ="S.12";
             break;
@@ -117,13 +117,13 @@ function updateScreen(newState) {
             break;
     
         case "Dead":
-            text ="You died, restart?"
+            text ="You died, do you want to restart?"
             choice1Text ="restart";
             choice1NextState = "S";
             break;
     
         default:
-            text = "ERROR";
+            text = "ERROR bloopdebloop";
             break;
     }
     document.getElementById("story").innerHTML = text;
