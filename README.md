@@ -1,9 +1,9 @@
 
 
-# Put your app name here!
+# Project Escape
 
-## Projectescape
-This game is an interesting and the edge of your seat RPG. You start in a dark room and proceed through the story from there.
+## Description
+This game is an creepy game about you escaping from your kidnappers(probably not so creepy).
 
 ## FAQs
 
