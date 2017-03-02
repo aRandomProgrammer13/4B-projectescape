@@ -1,63 +1,64 @@
 body {
-    background-image: url("images/game-background.jpg");
-    background-size: 100%;
+  background-image: url("images/game-background.jpg");
+  background-size: 100%;
 }
-.whole {
-    position: absolute;
-    margin: auto;
-    height:70%;
-    width:70%;
-    top:15%;
-    left:15%;
-    background-color: #D3D0D0;
-    background-image: url("images/silver.jpg");
+   .whole {
+  position: absolute;
+  margin: auto;
+  height:70%;
+  width:70%;
+  top:15%;
+  left:15%;
+  background-color: #D3D0D0 ;
+  background-image: url("images/silver.jpg");
 }
 #text {
-    /*border-left: #303032 solid 16px;*/
-    /* border-right: #303032 solid 16px;*/
+  /*border-left: #303032 solid 16px;*/
+  /* border-right: #303032 solid 16px;*/
 }
+
 /*
 .story {
-    font-size:36px; 
+  font-size:36px;
 }
 */
 /* Buttons */
 .buttons {
-    color: #C8C9CF;
-    top: 50px;
-    padding: 16px;
+  color: #C8C9CF ;
+  top: 50px;
+  padding: 16px;
 }
 /* Box */
 .screen {
-    background-color: #303032;
-    height: 10%;
-    width: 100%;
-    position: absolute;
-    top: 0%;
-    /* border-left: #303032 solid 16px;*/
-    /* border-right: #303032 solid 16px;*/
-    /*padding: 16px;*/
+  background-color: #303032 ;
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  /* border-left: #303032 solid 16px;*/
+  /* border-right: #303032 solid 16px;*/
+  /*padding: 16px;*/
 }
- 
+
 .middle {
-    background-color: transparent;
-    height: 80%;
-    width: 90%;
-    position: absolute;
-    top: 10%;
-    left: 5%;
-    /* border-radius: px;*/
-    /* padding: 16px;*/
-    /* border-color:#31363F;*/
-    /* border: 20px #31363F;*/
+  background-color: transparent;
+  height: 80%;
+  width: 90%;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  /* border-radius: px;*/
+  /* padding: 16px;*/
+  /* border-color:#31363F ;*/
+  /* border: 20px #31363F ;*/
 }
 .lower {
-    background-color: #31363F;
-    height: 10%;
-    width: 100%;
-    position: absolute;
-    top: 90%;
-    /*border-left: #303032 solid 16px;*/
-    /* border-right: #303032 solid 16px;*/
-    /* padding: 16px;*/
+  background-color: #31363F ;
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  top: 90%;
+  /*border-left: #303032 solid 16px;*/
+  /* border-right: #303032 solid 16px;*/
+  /* padding: 16px;*/
 }
