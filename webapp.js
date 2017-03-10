@@ -1,8 +1,40 @@
-function onLoadHandler() {
-    updateScreen("S");
+/* Global variables*/
+
+
+function save_cookies(caseStr) {
+	var d = new Date();
+	d.setTime(d.getTime() + (120*24*60*60*1000));
+	var expires = "expires="+ d.toUTCString();
+	
+	// Store your cookies like so:
+	document.cookie = "case=" + caseStr + "; " + expires;
 }
 
-function updateScreen(newState) {
+function load_cookies() {
+  var cookieStr = document.cookie;
+  var cookieArray = cookieStr.split("; ");
+  for(var i = 0; i< cookieArray.length; i++ ){
+    var tempItem = cookieArray[i];
+    var tempArray = tempItem.split("=");
+    var key = tempArray[0];  //case
+    var value = tempArray[1]; //S
+    if(key === "case") {
+      updateScreen(value);
+    }
+  }
+}
+
+
+function restart() {
+	updatescreen("S");
+}
+
+function onLoadHandler() {
+    load_cookies();
+	//updateScreen("S");
+}
+
+function updatescreen(newState) {
 
     var currentState = newState;
     var text = "";
@@ -14,7 +46,7 @@ function updateScreen(newState) {
     switch (currentState) {
 
         case "S":
-		/* This is the start of the story */
+		/* This is the start of the story*/ 
             text = "You find yourself tied to a chair in a creepy dark room. You assume that the door is locked. What do you do?";
             choice1Text = "Try to get free from the chair";
             choice1NextState = "S1";
@@ -38,7 +70,7 @@ function updateScreen(newState) {
             choice1NextState = "S.3";
             choice2Text = "Stay quiet";
             choice2NextState = "S.4";
-            break;
+			break;
 
         case "S2":
             text = "When you try to get the object you decide to get it by tipping your chair over so that your hand was by the object you then cut yourself free.";
@@ -156,7 +188,11 @@ function updateScreen(newState) {
         default:
             text = "ERROR";
             break;
-    }
+		
+	    }
+		//alert("saving..." + newState);
+		save_cookies(newState);
+	
 
     document.getElementById("story").innerHTML = text;
 
