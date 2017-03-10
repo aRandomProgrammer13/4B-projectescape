@@ -19,7 +19,7 @@ function load_cookies() {
     var key = tempArray[0];  //case
     var value = tempArray[1]; //S
     if(key === "case") {
-      updateScreen(value);
+      updatescreen(value);
     }
   }
 }
@@ -81,15 +81,15 @@ function updatescreen(newState) {
             break;
 			
 		case "S3":
-			text ="You leave the object alone so you are still tied to the chair, though you still made a lot of noise during your struggle."
+			text ="You leave the object alone so you are still tied to the chair, though you still made a lot of noise during your struggle.";
 			 choice1Text = "Continue";
             choice1NextState = "S.11";
 			break;
 			
 		case "S4":
-			text ="You broke the window with the sharp object and jumped out of the window, you landed into a bin full of trash bags."
-			choice1Text = "continue"
-			choice1NextState = "S5"
+			text ="You broke the window with the sharp object and jumped out of the window, you landed into a bin full of trash bags.";
+			choice1Text = "continue";
+			choice1NextState = "S5";
 			break;
 			
 		case "S.3":
@@ -105,7 +105,7 @@ function updatescreen(newState) {
 			choice1Text = "Left";
 			choice1NextState = "S6";
 			choice2Text = "Right";
-			choice2NextState = "S7"
+			choice2NextState = "S7";
 			break;
 			
 		case "S.4":
@@ -134,32 +134,32 @@ function updatescreen(newState) {
 			 break;
 		
 		case "S.6":
-			text ="You are tring to break free from the ropes while using the sharp object to cut yourself free"
+			text ="You are tring to break free from the ropes while using the sharp object to cut yourself free";
 			choice1Text ="Keep on cutting";
 			choice1NextState ="S.8";
 			break;
 		
 		
 		case "S.8":
-			text ="You keep on cutting, but you accidently slit across your wrist. You dropp the object and cry in fustration."
+			text ="You keep on cutting, but you accidently slit across your wrist. You dropp the object and cry in fustration.";
 			choice1Text ="Cry (you have no choice for this one)";
 			choice1NextState ="S.10";
 			break;
 			
 		case "S.10":
-			text ="There is suddenly a sound of keys jingling and the door knob turns."
+			text ="There is suddenly a sound of keys jingling and the door knob turns.";
 			choice1Text ="Stay back onto chair";
 			choice1NextState ="S.11";
 			break;
 			
 		case "S.11":
-			text ="A person with a ski mask comes in and laughs"
+			text ="A person with a ski mask comes in and laughs";
 			choice1Text ="continue";
 			choice1NextState ="S.12";
 			break;
 			
 		case "S.12":
-			text ="The kidnapper asks, 'Do you want to escape?'"
+			text ="The kidnapper asks, 'Do you want to escape?'";
 			choice1Text ="Yes";
 			choice1NextState ="S.13";
 			choice2Text ="No";
@@ -167,19 +167,19 @@ function updatescreen(newState) {
 			break;
 			
 		case "S.13":
-			text  ="You jump out of the window and escape and you live"
+			text  ="You jump out of the window and escape and you live";
 			choice1Text ="continue";
 			choice1NextState ="S";
 			break;
 		
 		case "S.14":
-			text ="The man said 'Ok....For being honest...I'll grant you a quick death for annoying me.' Then he shot you on the head.'"
+			text ="The man said 'Ok....For being honest...I'll grant you a quick death for annoying me.' Then he shot you on the head.'";
 			choice1Text ="continue";
 			choice1NextState ="Dead";
 			break;
 	
 		case "Dead":
-			text ="you died, restart?"
+			text ="you died, restart?";
 			choice1Text ="restart";
 			choice1NextState = "S";
             break;
@@ -196,14 +196,14 @@ function updatescreen(newState) {
 
     document.getElementById("story").innerHTML = text;
 
-    if (choice1Text == "") {
+    if (choice1Text === "") {
         document.getElementById("choice1").style.visibility = "hidden";
     } else {
         document.getElementById("choice1").style.visibility = "visible";
         document.getElementById("choice1").value = choice1Text;
         document.getElementById("choice1").setAttribute("onClick", "updateScreen('" + choice1NextState + "');");
     }
-    if (choice2Text == "") {
+    if (choice2Text === "") {
         document.getElementById("choice2").style.visibility = "hidden";
     } else {
         document.getElementById("choice2").style.visibility = "visible";
