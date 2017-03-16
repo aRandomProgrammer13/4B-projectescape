@@ -158,6 +158,9 @@ function updateScreen(newState) {
 			choice2Text ="No";
 			choice2NextState ="S.14";
 			break;
+		
+		case "S12":
+			text =""
 			
 		case "S.13":
 			text  ="You jump out of the window and escape and you live";
