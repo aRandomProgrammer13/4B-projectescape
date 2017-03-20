@@ -4,7 +4,7 @@
 
 ## Description
 This game is an creepy game about you escaping from your kidnappers(probably not so creepy).
-
+<!--
 ## FAQs
 
 ### Insert question here?
@@ -12,7 +12,7 @@ Insert answer here.
 
 ### Insert question here?
 Insert answer here.
-<!--
+
 ## Changelog
 
 ### Version 1.1
