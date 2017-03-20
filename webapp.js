@@ -89,13 +89,6 @@ function updateScreen(newState) {
 			choice1NextState ="Dead";
 			break;
 		
-		case "S7":
-			text = "You go to the police station and you live";
-			choice1Text = "continue";
-			choice1NextState = "S";
-			break;
-		
-		 
 		case "S.5":
 			text ="You then decide what to do next and see a silver glint on the floor";
 			choice1Text = "Grab the object";
@@ -107,12 +100,31 @@ function updateScreen(newState) {
 			choice1Text ="Keep on cutting";
 			choice1NextState ="S.8";
 			break;
+			
+			case "S7":
+			text = "You go to the police station and you report to the police.";
+			choice1Text = "continue";
+			choice1NextState = "S8";
+			break;
 		
+		case "S8":
+			text = "They ask you, 'What happened to you?'";
+			choice1Text = "You lie to the police.";
+			choice1NextState = "S9";
+			choice2Text = "You tell the truth to the police.";
+			choice2NextState = "S.15";
+			break;
 		
 		case "S.8":
 			text ="You keep on cutting, but you accidently slit across your wrist. You dropp the object and cry in fustration.";
 			choice1Text ="Cry (you have no choice for this one)";
 			choice1NextState ="S.10";
+			break;
+		
+		case "S9":
+			text ="You said,'I was attacked by a dog.' The police officer asked, 'Do you know the breed of the dog?'";
+			choice1Text ="continue";
+			choice1NextState ="S10";
 			break;
 			
 		case "S.10":
@@ -121,10 +133,22 @@ function updateScreen(newState) {
 			choice1NextState ="S.11";
 			break;
 			
+		case "S10":
+			text ="You tell the police that it was a huge German Shepherd. The police looks to each other and they look at you suspiciously.";
+			choice1Text ="continue";
+			choiceNextState ="S11";
+			break;
+			
 		case "S.11":
 			text ="A person with a ski mask comes in and laughs";
 			choice1Text ="continue";
 			choice1NextState ="S.12";
+			break;
+			
+		case "S11":
+			text ="They lead you to another dim-lit room and the handcuff you to the table.";
+			choice1Text ="continue";
+			choice1NextState ="End";
 			break;
 			
 		case "S.12":
@@ -134,24 +158,53 @@ function updateScreen(newState) {
 			choice2Text ="No";
 			choice2NextState ="S.14";
 			break;
+		
+		case "S12":
+			text =""
 			
 		case "S.13":
 			text  ="You jump out of the window and escape and you live";
 			choice1Text ="continue";
-			choice1NextState ="S";
+			choice1NextState ="S7";
 			break;
 		
 		case "S.14":
-			text ="The man said 'Ok....For being honest...I'll grant you a quick death for annoying me.' Then he shot you on the head.'";
+			text = "The man said 'Ok....For being honest...I'll grant you a quick death for annoying me.' Then he shot you on the head.'";
 			choice1Text ="continue";
 			choice1NextState ="Dead";
 			break;
-	
+		
+		case "S.15":
+			text = "You say, 'I got kidnapped and was brought into a room.'";
+			choice1Text ="continue";
+			choice1NextState ="S.16";
+			break;
+			
+		case "S.16":
+			text ="They then ask you,'do you want to call for an investigation or not?' then the officer walked away and start discussing with other officers.'";
+			choice1Text ="Yes";
+			choice1NextState ="S11";
+			choice2Text ="No";
+			choice2NextState ="S.17";
+			break;
+		
+		case "S.17":
+			text ="The officer heard your answer, he returned and repied to you' I am sorry, but since you are the witness about this case, we are responsible for you now.'";
+			choice1Text ="Continue";
+			choice1NextState ="S11";
+			break;
+			
 		case "Dead":
 			text ="you died, restart?";
 			choice1Text ="restart";
 			choice1NextState = "S";
             break;
+		
+		case "End":
+			text ="Our story ends here for now. Thanks for playin'";
+			choice1Text ="End";
+			choice1NextState ="S";
+			break;
 
 	
         default:
